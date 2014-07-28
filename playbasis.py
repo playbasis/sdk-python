@@ -168,7 +168,7 @@ class Playbasis:
         return self.call('Player/%s/goods%s' % (playerId, self.apiKeyParam))
 
     def questOfPlayer(self, playerId, questId):
-        return self.call('Player/quest%s%s&player_id=%s' % (questId, self.apiKeyParam, playerId))
+        return self.call('Player/quest/%s%s&player_id=%s' % (questId, self.apiKeyParam, playerId))
 
     def questListOfPlayer(self, playerId):
         return self.call('Player/quest%s&player_id=%s' % (self.apiKeyParam, playerId))

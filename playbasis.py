@@ -224,7 +224,7 @@ class Playbasis:
         return self.call('Quest/available%s&player_id=%s' % (self.apiKeyParam, playerId))
 
     def questAvailable(self, questId, playerId):
-        return self.call('Quest/%s/available/%s%s' % (questId, self.apiKeyParam, playerId))
+        return self.call('Quest/%s/available/%s&player_id=%s' % (questId, self.apiKeyParam, playerId))
 
     def joinQuest(self, questId, playerId):
         data = {
